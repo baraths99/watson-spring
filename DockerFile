@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+ADD target/watson-spring-0.0.1-SNAPSHOT.jar watson-spring-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","watson-spring-0.0.1-SNAPSHOT.jar"]
